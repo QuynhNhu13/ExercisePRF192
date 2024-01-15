@@ -1,10 +1,31 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 int main(){
-  double a,b;
-  printf ("Input a= ");
-  scanf ("%lf", &a);
-  printf ("Input b= ");
-  scanf ("%lf", &b);
+  int a,b;
+  int quotient;
+  int modulus;
   
- 
+  printf ("Input a= ");
+  scanf ("%d", &a);
+  printf ("Input b= ");
+  scanf ("%d", &b);
+
+  int sum = a+b;
+  int difference = a-b;
+  int product = a*b;
+  
+  if (b!=0){
+    quotient = a/b;
+    modulus = a%b;
+  } else {
+    printf ("Invalid!!!"); 
+  }
+
+  printf ("Sum of %d and %d = %d\n", a, b, sum);
+  printf ("Difference of %d and %d = %d\n", a, b, difference);
+  printf ("Product of %d and %d = %d\n", a, b, product);
+  printf ("Quotient of %d and %d = %d\n", a, b, quotient);
+  printf ("Modulus of %d and %d = %d\n", a, b, modulus);
+
+  return 0;
 }
