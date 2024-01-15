@@ -1,25 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h> // Thư viện này để sử dụng hàm abs()
 int main(){
 
-  double a, b, quotient;
-  printf ("Input a: ");
-  scanf ("%lf", &a);
-  printf ("Input b: ");
-  scanf ("%lf", &b);
+  int a,b;
+  int quotient;
+  int modulus;
+  printf ("Input a= ");
+  scanf ("%d", &a);
+  printf ("Input b= ");
+  scanf ("%d", &b);
 
   if(b!=0){
     quotient=a/b;
-    printf ("Quotient of %lf and %lf = %lf \n", a, b, quotient);
+    modulus = a%b;
   } else {
     printf ("Invalid!!!");
   }
-  
-  double moda = abs(a); // Được sử dụng để tính Modulus (giá trị tuyệt đối) của một số
-  double modb = abs(b);
-
-  printf ("Modulus of %lf: %lf\n", a, moda);
-  printf ("Modulus of %lf: %lf\n", b, modb);
-
+  printf ("Quotient of %d and %d = %d\n", a, b, quotient);
+  printf ("Modulus of %d and %d = %d\n", a, b, modulus);
   return 0;
 }
