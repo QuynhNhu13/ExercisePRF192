@@ -1,1 +1,14 @@
-
+#include <stdio.h>
+int main (){
+ int r;
+ printf ("Input radius: ");
+ scanf ("%d", &r);
+ int d=r+r;
+ float C=d*3.14;
+ float S=r*r*3.14;
+ printf ("Diameter of the circle: %d\n", r+r);
+ printf ("Circumference of the circle: %f\n", C);
+ printf ("Area of the circle: %f\n", S);
+ getch ();
+ return 0;
+}
