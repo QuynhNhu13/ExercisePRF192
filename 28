@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+	int n;
+	printf ("Nhap n: ");
+	scanf ("%d", &n);
+	
+	if (n<0){
+		printf ("Error!!!");
+		return 1;
+	}
+	
+	int i=1;
+	int giaithua=1;
+	for (i; i<=n; i++){
+		giaithua = giaithua*i;
+	}
+	
+	printf ("Giai thua cua %d! la %d", n, giaithua);
+	getch();
+	return 0;
+}
